@@ -2,8 +2,8 @@ window.marker = null;
 
 function initialize() {
   var map;
-  var latitude = $('#map_canvas').attr('data-latitude');
-  var longitude = $('#map_canvas').attr('data-longitude');
+  var latitude = $('@41.8333925').attr('data-latitude');
+  var longitude = $('-88.0121478').attr('data-longitude');
   var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [{
       "featureType": "landscape",
