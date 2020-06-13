@@ -115,3 +115,24 @@ jQuery(document).ready(function() {
 	});
         
 });
+
+// map left
+var locations = [
+	["LOCATION_1", 42.2859612, -88.5574484],
+	["LOCATION_2", -33.5180178, -70.633567]
+	
+  ];
+
+let map = L.map('map').setView([0, 0], 2);
+
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bb8tnL0VAdmwOLkyZIOV', {
+	attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+
+}).addTo(map);
+let marker = L.marker([42.2859612, -88.5574484]).addTo(map);
+
+for (var i = 0; i < locations.length; i++) {
+	marker = new L.marker([locations[i][1], locations[i][2]])
+	  .bindPopup(locations[i][0])
+	  .addTo(map);
+  }
