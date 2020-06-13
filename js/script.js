@@ -118,8 +118,8 @@ jQuery(document).ready(function() {
 
 // map left
 var locations = [
-	["LOCATION_1", 42.2859612, -88.5574484],
-	["LOCATION_2", -33.5180178, -70.633567]
+	["18315 Woodland Trail, Marengo, IL 60152", 42.2859612, -88.5574484],
+	["Av. Lo ovalle 387 San Joaquin", -33.5180178, -70.633567]
 	
   ];
 
