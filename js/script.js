@@ -117,7 +117,10 @@ jQuery(document).ready(function() {
 });
 
 // map left
-var locations = [
+
+
+
+const locations = [
 	["18315 Woodland Trail, Marengo, IL 60152", 42.2859612, -88.5574484],
 	["Monjitas 565 - Piso 5, Santiago centro", -33.4363238, -70.6474884]
 	
@@ -129,6 +132,7 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bb8tnL0VA
 	attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
 
 }).addTo(map);
+
 let marker = L.marker([42.2859612, -88.5574484]).addTo(map);
 
 for (var i = 0; i < locations.length; i++) {
