@@ -118,8 +118,6 @@ jQuery(document).ready(function() {
 
 // map left
 
-
-
 const locations = [
 	["18315 Woodland Trail, Marengo, IL 60152", 42.2859612, -88.5574484],
 	["Monjitas 565 - Piso 5, Santiago centro", -33.4363238, -70.6474884]
