@@ -330,7 +330,13 @@ a h4:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+
 }
+
+.bg-cover:hover {filter: saturate(180%);}
+
+.overlay:hover{filter: saturate(180%);}
 
 .border-primary {
   border-color: #ededf1 !important;

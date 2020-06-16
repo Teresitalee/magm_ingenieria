@@ -122,11 +122,11 @@
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="#">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Nombre">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Email">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Asunto">
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="Mensaje"></textarea>
+        <form action="enviar-formulario.php" method="post">
+          <input type="text" class="form-control mb-3" id="name" name="nombre" placeholder="Nombre" required>
+          <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Email" required>
+          <input type="text" class="form-control mb-3" id="subject" name="asunto" placeholder="Asunto" required>
+          <textarea name="mensaje" id="message" class="form-control mb-3" placeholder="Mensaje" required></textarea>
           <button type="submit" value="send" class="btn btn-success">ENVIAR MENSAJE</button>
         </form>
       </div>
