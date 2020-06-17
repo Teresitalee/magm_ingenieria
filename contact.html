@@ -122,19 +122,18 @@
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="enviar-formulario.php" method="post">
+        <form action="email-envio.php" method="post">
           <input type="text" class="form-control mb-3" id="name" name="nombre" placeholder="Nombre" required>
           <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Email" required>
           <input type="text" class="form-control mb-3" id="subject" name="asunto" placeholder="Asunto" required>
           <textarea name="mensaje" id="message" class="form-control mb-3" placeholder="Mensaje" required></textarea>
-          <button type="submit" value="send" class="btn btn-success">ENVIAR MENSAJE</button>
+          <input type="submit" name="enviar" class="btn btn-success">
         </form>
       </div>
       <div class="col-lg-5">
         <p class="mb-5">Asesoramos y desarrollamos soluciones tecnológicas para mejorar el desempeño de la industria minera, transportes, sociales y forestales; por medio de la integración de diversas tecnologías a sus procesos, haciéndolos más eficientes.</p>
-        <a href="tel:+8802057843248" class="text-color h5 d-block">+56 (9) 35159441</a>
-        <a href="mailto:yourmail@email.com" class="mb-5 text-color h5 d-block">informacion@magm.com</a>
-        
+        <a href="tel:+935159441" class="text-color h5 d-block">+56 (9) 35159441</a>
+        <a href="mailto:teresita.1852@hotmail.com" class="mb-5 text-color h5 d-block" target="_blank">informacion@magm.com</a>
       </div>
     </div>
   </div>
@@ -207,6 +206,7 @@
   </div>
 </footer>
 <!-- /footer -->
+
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
