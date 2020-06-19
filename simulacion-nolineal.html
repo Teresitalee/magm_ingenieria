@@ -157,62 +157,62 @@
       </div>
 
       <div class="col-12 mb-4">
-        <h3 class="mb-3">Propiedades del estudio</h3>
-        <ul class="list-styled">
+        <h3 class="mb-2">Propiedades del estudio</h3>
+        <ul class="list-group">
           <li>En el caso del análisis estático no lineal, el tiempo es una seudovariable; describe a qué niveles de carga se busca la solución. Sólo para modelos de material de fluencia y viscoelásticos, el tiempo tiene valores reales. En el caso del análisis dinámico no lineal, el tiempo es una variable real.
             n</li>
         </ul>
       </div>
 
       <div class="col-12 mb-4">
-        <h3 class="mb-3">Tipo de materiales</h3>
+        <h3 class="mb-2">Tipo de materiales</h3>
         <p>En el caso de los estudios estáticos, sólo puede seleccionar materiales ortotrópicos e isotrópicos lineales. En el caso de los estudios no lineales, puede definir los siguientes modelos de material:</p>
-        <ul class="list-styled">
-          <li>Elástico no lineal</li>
-          <li>Plasticidad de von Mises (cinemática e isotrópica)</li>
-          <li>Plasticidad de Tresca (cinemática e isotrópica)</li>
-          <li>Plasticidad de Drucker Prager</li>
-          <li>Hiperelástico de Mooney-Rivlin</li>
-          <li>Hiperelástico de Ogden</li>
-          <li>Hiperelástico de Blatz-Ko</li>
-          <li>Viscoelástico</li>
+        <ul class="list-group">
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Elástico no lineal</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Plasticidad de von Mises (cinemática e isotrópica)</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Plasticidad de Tresca (cinemática e isotrópica)</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Plasticidad de Drucker Prager</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Hiperelástico de Mooney-Rivlin</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Hiperelástico de Ogden</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Hiperelástico de Blatz-Ko</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Viscoelástico</li>
         </ul>
       </div>
 
       <div class="col-12 mb-4">
-        <h3 class="mb-3">Cargas y restricciones</h3>
-        <ul class="list-styled">
+        <h3 class="mb-2">Cargas y restricciones</h3>
+        <ul class="list-group">
           <li> Cuando se utiliza el método de control de fuerza, se definen las restricciones y las cargas como funciones de tiempo. En el caso de la viscoelasticidad y los problemas de fluencia, y en análisis dinámicos no lineales, el tiempo es real. En el caso de otros problemas, el tiempo es una pseudovariable que especifica el nivel de carga en pasos de solución diferentes.
           </li>
         </ul>
       </div>
 
       <div class="col-6 mb-4">
-        <h3 class="mb-3">Solución</h3>
-        <ul class="list-styled">
+        <h3 class="mb-2">Solución</h3>
+        <ul class="list-group">
           <li> La solución de los estudios no lineales incluye el cálculo de los resultados en diferentes pasos de la solución (niveles de carga y restricción). Los procedimientos numéricos son más complejos que la solución de los estudios estáticos lineales. Al buscar la convergencia a la solución correcta en un paso de la solución, el programa realiza una cantidad de iteraciones. Por estos motivos, la solución de estudios no lineales demanda mucho más tiempo y recursos que la solución de estudios estáticos lineales.
           </li>
         </ul>
       </div>
 
       <div class="col-6 mb-4">
-        <h3 class="mb-3">Resultados</h3>
-        <ul class="list-styled">
+        <h3 class="mb-2">Resultados</h3>
+        <ul class="list-group">
           <li>Los resultados están disponibles como funciones de tiempo. Por ejemplo, las tensiones están disponibles en diferentes pasos de la solución. Además de ver los resultados en el último paso de solución, puede ver resultados en otros pasos de solución solicitados en las propiedades del estudio para la solución. En el caso de las ubicaciones seleccionadas en las propiedades del estudio, puede graficar los resultados como función de pseudotiempo (historial de carga)
           </li>
         </ul>
       </div>
 
       <div class="col-12 mb-4">
-        <h3 class="mb-3">Problemas de contacto</h3>
+        <h3 class="mb-2">Problemas de contacto</h3>
         <p>El contacto generalmente favorece la falta de linealidad. Los estudios estáticos permiten la solución de problemas de contacto con desplazamientos pequeños y grandes. Las siguientes son limitaciones en la utilización de los estudios estáticos para solucionar problemas de contacto:
         </p>
-        <ul class="list-styled">
-          <li>Si utiliza desplazamientos grandes, los resultados están disponibles sólo en el último paso de la solución. En los estudios no lineales, puede obtener los resultados en cada paso de la solución.
+        <ul class="list-group">
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Si utiliza desplazamientos grandes, los resultados están disponibles sólo en el último paso de la solución. En los estudios no lineales, puede obtener los resultados en cada paso de la solución.
           </li>
-          <li>Si existe una no linealidad que no es la provocada por contacto, no podrá utilizar los estudios estáticos. Esto puede deberse a propiedades de materiales, cambios en las cargas o restricciones no lineales o cualquier otra no linealidad</li>
-          <li>Al utilizar estudios estáticos para resolver los problemas de contacto con desplazamientos grandes, el programa no actualiza las direcciones de la carga cuando el modelo se deforma. En los estudios no lineales, el programa actualiza las direcciones de la carga de presión según la deformada en cada paso de la solución, si la dirección de carga actualizada con desviación está seleccionada en las propiedades del estudio.</li>
-          <li>En los estudios no lineales, usted tiene control sobre los pasos de la solución. En los estudios estáticos que utilizan desplazamientos grandes, el programa establece los pasos de la solución internamente.</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Si existe una no linealidad que no es la provocada por contacto, no podrá utilizar los estudios estáticos. Esto puede deberse a propiedades de materiales, cambios en las cargas o restricciones no lineales o cualquier otra no linealidad</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>Al utilizar estudios estáticos para resolver los problemas de contacto con desplazamientos grandes, el programa no actualiza las direcciones de la carga cuando el modelo se deforma. En los estudios no lineales, el programa actualiza las direcciones de la carga de presión según la deformada en cada paso de la solución, si la dirección de carga actualizada con desviación está seleccionada en las propiedades del estudio.</li>
+          <li><i class="fas fa-check 3x text-success mx-2"></i>En los estudios no lineales, usted tiene control sobre los pasos de la solución. En los estudios estáticos que utilizan desplazamientos grandes, el programa establece los pasos de la solución internamente.</li>
         </ul>
       </div>
     </div>
@@ -237,7 +237,7 @@
         <!-- company -->
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3 mb-md-0">
           <h4 class="text-white mb-3">LLÁMANOS</h4>
-          <ul class="list-unstyled">
+          <ul class="list-group">
             <li class="mb-3"><a class="text-color" href="#">+1 (815) 7645855</a></li>
             <li class="mb-3"><a class="text-color" href="#">+56 (9) 35159441</a></li>
           </ul>
@@ -285,6 +285,7 @@
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/5179a0641b.js" crossorigin="anonymous"></script>
 <!-- slick slider -->
 <script src="plugins/slick/slick.min.js"></script>
 <!-- aos -->
@@ -293,9 +294,7 @@
 <script src="plugins/venobox/venobox.min.js"></script>
 <!-- filter -->
 <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-<script src="plugins/google-map/gmap.js"></script>
+
 
 <!-- Main Script -->
 <script src="js/script.js"></script>

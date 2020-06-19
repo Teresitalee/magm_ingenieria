@@ -1,6 +1,7 @@
 
 <?php
 
+
 // Llamando a los campos
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
@@ -19,6 +20,8 @@ $carta .= "Mensaje: $mensaje";
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta);
 header('Location:gracias-envio.html');
+die();
+
  
 ?>
  
