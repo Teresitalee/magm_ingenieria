@@ -1147,3 +1147,24 @@ link:focus,
 		display:block;
 	}
 }
+
+
+
+.banner {
+
+	position:relative;
+	width:100%;
+	overflow: hidden;
+}
+.banner video {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.banner-innner {
+    padding: 200px 0;
+}
+
+.banner-left{
+  margin-top: 150px !important;
+}
