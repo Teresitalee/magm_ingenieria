@@ -22,10 +22,8 @@
   <link rel="stylesheet" href="plugins/aos/aos.css">
   <!-- venobox popup -->
   <link rel="stylesheet" href="plugins/venobox/venobox.css">
-
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -90,10 +88,12 @@
             <li class="nav-item @@about">
               <a class="nav-link" href="about.html">Nosotros</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="services.html">servicios</a>
             </li>
-            
+            <li class="nav-item active">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
             <li class="nav-item @@contact">
               <a class="nav-link" href="contact.html">CONTACTo</a>
             </li>
@@ -122,109 +122,65 @@
 </section>
 <!-- /page title -->
 
-<!-- courses -->
+<!-- gallery -->
 <section class="section">
   <div class="container">
-
-    <!-- box 1 -->
-    <div class="row justify-content-center">
-      <!-- course item -->
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/services/2.jpg" alt="course thumb">
-          <div class="card-body">
-            <a href="optimizacion.html">
-              <h4 class="card-title text-uppercase">optimización/desarrollo de sistemas en equipos de transportes.</h4>
-            </a>
-            <p class="card-text mb-4">El rubro del transporte es un área tan especializada dado nuestro variado entorno geográfico y necesidades de abastecimiento en todos los aspectos.</p>
-            <a href="optimizacion.html" class="btn btn-success btn-sm">ver mas</a>
-          </div>
+    <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 d-flex justify-content-center mb-5">
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">Todo</button>
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Montañas</button>
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Mar</button>
         </div>
+        <!-- Grid column -->
       </div>
-    <!-- end box 1 -->
+      <!-- Grid row -->
 
- 
-  <!-- box 2 -->
-   <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/services/1.jpg" alt="course thumb">
-      <div class="card-body">
-        <a href="simulacion-lineal.html">
-          <h4 class="card-title text-uppercase">Simulación lineal estática de cuerpos rígidos</h4>
-        </a>
-        <p class="card-text mb-4">Todas las estructuras reales se comportan de forma no lineal de uno u otro modo en algún nivel de la carga.</p>
-        <a href="simulacion-lineal.html" class="btn btn-success btn-sm">ver mas</a>
+      <!-- Grid row -->
+      <div class="galleri" id="galleri">
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
       </div>
-    </div>
-  </div>
-  <!-- end box 2 -->
-  
-
-  <!-- box 3 -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/services/F2.jpg" alt="course thumb">
-      <div class="card-body">
-        <a href="modelo-matematico.html">
-          <h4 class="card-title text-uppercase">Modelos matemáticos y solución de problemas en ingeniería</h4>
-        </a>
-        <p class="card-text mb-4">El conocimiento y la comprensión son prerrequisitos para la aplicación eficaz de cualquier herramienta.</p>
-        <a href="modelo-matematico.html" class="btn btn-success btn-sm">ver mas</a>
-      </div>
-    </div>
-  </div>
-  <!-- end box 3-->
-
-
-  <!-- box 4-->
-   <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/services/5.jpg" alt="course thumb">
-      <div class="card-body">
-        <a href="simulacion-nolineal.html">
-          <h4 class="card-title text-uppercase">Simulación estática y dinámica no lineal</h4>
-        </a>
-        <p class="card-text mb-4">Todas las estructuras reales se comportan de forma no lineal de uno u otro modo en algún nivel de la carga.</p>
-        <a href="simulacion-nolineal.html" class="btn btn-success btn-sm">ver mas</a>
-      </div>
-    </div>
-  </div>
-  <!-- end box 4-->
-
-  <!-- box 5 -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/services/3.jpg" alt="course thumb">
-      <div class="card-body">
-        <a href="servicio-ingenieria.html">
-          <h4 class="card-title text-uppercase">servicios de ingeniería en general</h4>
-        </a>
-        <p class="card-text mb-4">Análisis de reacciones y distribución de carga según normativa carga normal y especial.</p>
-        <a href="servicio-ingenieria.html" class="btn btn-success btn-sm">ver mas</a>
-      </div>
-    </div>
-  <!--  end box 5 -->
-
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/services/4.jpg" alt="course thumb">
-      <div class="card-body">
-        <a href="certificaciones-iso.html">
-          <h4 class="card-title text-uppercase">consultorías de estándares ISO </h4>
-        </a>
-        <p class="card-text mb-4">Análisis y asesorias de diferentes brechas que necesitas para obtener el certificado.</p>
-        <a href="certificaciones-iso.html" class="btn btn-success btn-sm">ver mas</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-</div>
-
+      <!-- Grid row -->
   </div>
 </section>
-<!-- /courses -->
+<!-- /gallery -->
 
 <!-- footer -->
 <footer>
@@ -283,6 +239,21 @@
 </footer>
 <!-- /footer -->
 
+<script type="text/javascript">
+    $(function() {
+    var selectedClass = "";
+    $(".filter").click(function(){
+    selectedClass = $(this).attr("data-rel");
+    $("#galleri").fadeTo(100, 0.1);
+    $("#galleri div").not("."+selectedClass).fadeOut().removeClass('animation');
+    setTimeout(function() {
+    $("."+selectedClass).fadeIn().addClass('animation');
+    $("#galleri").fadeTo(300, 1);
+    }, 300);
+    });
+    });
+</script>
+
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
@@ -296,6 +267,8 @@
 <script src="plugins/venobox/venobox.min.js"></script>
 <!-- filter -->
 <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+
+
 
 
 <!-- Main Script -->
